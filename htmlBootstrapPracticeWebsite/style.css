@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    margin: 0px 15%;
+
+}
+
+.image {
+    height: 34px;
+}
+
+/* Home  */
+
+.bgImage{
+    height: 100px;
+}
+
+/* footer */
+em{
+    color: red;
+}
+
+.error{
+    color: red;
+}

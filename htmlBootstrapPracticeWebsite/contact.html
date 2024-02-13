@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinstorm</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js">
+    </script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="d-flex justify-content-end pt-5 pb-5">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            </form>
+            <img src="Public/facebookImg.png" alt="Pinstrom.com" class="img-fluid image " />
+            <img src="Public/linkdinImg.png" alt="Pinstrom.com" class="img-fluid image " />
+            <img src="Public/twiterImg.png" alt="Pinstrom.com   " class="img-fluid image " />
+        </div>
+
+        <div class="mb-5">
+            <h1>pinstorm</h1>
+        </div>
+        <!-- Navbar -->
+        <div class="container-fluid mb-5">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ourWork.html">OUR WORK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">CAREERS</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Contact  -->
+
+        <div class="row">
+            <div class="col-6">
+                <h3>Contact Us</h3>
+                <p>We serve our clients around the world from offices in Mumbai, Amsterdam and Kathmandu.</p>
+
+
+                <strong>Pinstorm Technologies Limited.</strong>
+                <p>37 Perry Cross Road, Bandra West,
+                    Mumbai – 400050, India</p>
+                <strong>Phone</strong>
+                <p>+91 22 2648 8853</p>
+                <strong>Email </strong>
+                <p>india@pinstorm.com</p>
+                <strong>Press and Media contacts</strong>
+                <p>media@pinstorm.com | +91 22 6694 1210</p>
+                <h6>OUR OTHER OFFICES</h6>
+                <strong>Pinstorm BV</strong>
+                <p>Kapteynstraat 1,
+                    #140,
+                    2201 BB
+                    Noordwijk
+                    Netherlands</p>
+                <strong>Pinstorm Technologies Limited.</strong>
+                <p>Remwork HQ,Bhakti Marga-04,
+                    Baluwater,Kathmandu, Nepal- 44600</p>
+            </div>
+
+
+            <!-- Input Content -->
+
+
+            <div class="col-6">
+                <form id="signupForm">
+                    <div class="form-floating mb-3">
+
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" id="company" name="company">
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="website">Website</label>
+                        <input type="text" class="form-control" id="website" name="website">
+
+                    </div>
+                    <div class="form-floating">
+                        <label for="textarea">Please describe your brand/business and what you seek</label>
+                        <textarea class="form-control" id="textarea" name="textarea" style="height: 100px"></textarea>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email">
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="cNumber">Contact number</label>
+                        <input type="text" class="form-control" name="cNumber" id="cNumber">
+
+                    </div>
+
+                    <div class="form-check">
+                        <label for="flexRadioDefault1">
+                            Call
+                        </label>
+                        <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+
+                    </div>
+                    <div class="form-check">
+                        <label for="flexRadioDefault2">
+                            Email
+                        </label>
+                        <input type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+
+                    </div>
+
+
+                    <div class="form-floating mb-3">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control" name="country" id="country">
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="city">City(required)</label>
+                        <input type="text" class="form-control" name="city" id="city">
+
+                    </div>
+                    <button type="submit" onclick="validate()" class="btn btn-dark mb-5">SEND</button>
+            </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark mb-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <h3 class="text-white"><em>Recent</em> Twitter</h3>
+                    <iframe scrolling="yes" frameborder="1" allowtransparency="false" allowfullscreen="true" class=""
+                        style="
+                    position: static;
+                    visibility: visible;
+                    width: 205px;
+                  " title="Twitter Timeline"
+                        src="https://syndication.twitter.com/srv/timeline-profile/screen-name/Pinstorm?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;origin=https%3A%2F%2Fwww.pinstorm.com%2F&amp;sessionId=5e96724c5c0363746ba1f432dc737aca900cc5ed&amp;showHeader=true&amp;showReplies=false&amp;siteScreenName=pinstorm&amp;transparent=false&amp;widgetsVersion=2615f7e52b7e0%3A1702314776716"></iframe>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                    <div class="d-flex flex-column">
+                        <h3 class="hN text-white  "><em>We</em> Are Social</h3>
+                        <div class=" ">
+                            <img src="public/facebookImg.png" alt="Pinstrom.com" class="img-fluid image" />
+                            <img src="public/linkdinImg.png" alt="Pinstrom.com" class="img-fluid image" />
+                            <img src="public/twiterImg.png" alt="Pinstrom.com" class="img-fluid image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both">&nbsp;</div>
+            <div class="text-white ms-4 ">
+                Copyright © 2021 Pinstorm Technologies Limited | All rights reserved
+                by the gremlins in the basement.
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
