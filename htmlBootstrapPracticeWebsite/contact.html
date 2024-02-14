@@ -87,31 +87,32 @@
 
                         <label for="name">Name</label>
                         <input type="text" class="form-control" name="name" id="name">
-
+                        <span class="error" id="nameError"></span><br>
                     </div>
                     <div class="form-floating mb-3">
                         <label for="company">Company</label>
                         <input type="text" class="form-control" id="company" name="company">
-
+                        <span class="error" id="companyError"></span><br>
                     </div>
                     <div class="form-floating mb-3">
                         <label for="website">Website</label>
                         <input type="text" class="form-control" id="website" name="website">
-
+                        <span class="error" id="websiteError"></span><br>
                     </div>
                     <div class="form-floating">
                         <label for="textarea">Please describe your brand/business and what you seek</label>
                         <textarea class="form-control" id="textarea" name="textarea" style="height: 100px"></textarea>
+                        <span class="error" id="textareaError"></span><br>
                     </div>
                     <div class="form-floating mb-3">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" name="email" id="email">
-
+                        <span class="error" id="emailError"></span><br>
                     </div>
                     <div class="form-floating mb-3">
                         <label for="cNumber">Contact number</label>
                         <input type="text" class="form-control" name="cNumber" id="cNumber">
-
+                        <span class="error" id="cNumberError"></span><br>
                     </div>
 
                     <div class="form-check">
@@ -133,16 +134,18 @@
                     <div class="form-floating mb-3">
                         <label for="country">Country</label>
                         <input type="text" class="form-control" name="country" id="country">
-
+                        <span class="error" id="countryError"></span><br>
                     </div>
                     <div class="form-floating mb-3">
                         <label for="city">City(required)</label>
                         <input type="text" class="form-control" name="city" id="city">
-
+                        <span class="error" id="cityError"></span><br>
                     </div>
-                    <button type="submit" onclick="validate()" class="btn btn-dark mb-5">SEND</button>
+                    <button type="button" onclick="validate()" class="btn btn-dark mb-5">SEND</button>
             </div>
+           
             </form>
+            
         </div>
 
     </div>
